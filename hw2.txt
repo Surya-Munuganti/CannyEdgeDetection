@@ -1,0 +1,40 @@
+Homework 2
+
+Submit HysteresisThreshold.m and NonMaximalSuppression.m ONLY
+(You may write the functions in Python too)
+Upload the files on Moodle
+
+Write your name and ID number in BOTH files
+***You CANNOT use the command edge
+***Late submissions after the deadline WILL NOT BE CONSIDERED.
+***Assignments should be done alone. No group submission is accepted.
+
+Implement the Canny edge detection algorithm.  Do so as follows:
+
+   a) Write a function to compute image gradients expressed as
+      magnitude and direction. The form should be:
+
+     [magnitude,orientation] = EdgeFilter(image, sigma)
+
+     In this case, sigma is the variance of the Gaussian filter you
+     must use to compute the derivatives.
+
+   b) Write a non-maximal suppression algorithm of the form
+
+     newMagnitudeImage = NonMaximalSuppression(magnitude,orientation)
+
+   c) Write a hysteresis thresholding algorithm of the form
+
+     BinaryEdgeImage = HysteresisThreshold(magnitudeImage,minThresh,
+     maxThresh)
+
+     As suggested above, the output should be a binary image.
+
+   To demonstrate the algorithm, apply the filter to the “BrainWeb”
+
+
+   Use the script main.m that performs each stage of the Canny
+   filter and displays the intermediate results in a separate
+   image. 
+  
+
